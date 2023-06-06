@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/sass/style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Services</title>
+</head>
+<body>
+    <!--BEGIN WRAPPER-->
+    <div class="wrapper">   
+
+        <!--BEGIN HEADER-->
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__block">
+                        <div class="header__logo">
+                            <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                        </div>
+                        <div class="header__bar">                            
+                                <div class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">Buy
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                    <a href="#" class="dropdown-link">Category number one </a>
+                                    <a href="apartaments.html" class="dropdown-link">Apartments in Dubai</a>
+                                    <a href="#" class="dropdown-link">Category number twenty five</a>
+                                    </div>
+                                </div>
+                                <div class="header__links">                              
+                                <a href="blog.html" class="link">Blog</a>
+                                <a href="services.html" class="link">About</a>
+                                <a href="contacts.html" class="link">Contact</a>   
+                                </div>                                                        
+                        </div>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="header__button">
+                            <div class="button" id="button-1">
+                                <div id="circle"></div>
+                                <a href="#">Book a consultation</a>
+                            </div>
+                        </div>
+                    <div class="header__lang">
+                        <a href="#" class="link active">En </a>
+                        <a href="#" class="link">Ru</a>  
+                    </div>                                 
+                    <div class="header__phone">
+                        <a class="phone" href="tel:81234567890">+7 (212) 674-25-10</a>
+                    </div>                    
+                    
+                    <div class="modal">                        
+                        <div class="modal__nav modal__nav--active">
+                        <div class="modal__row">
+                                <div class="modal__logo">
+                                    <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                                </div>
+                                <div class="modal__contacts">
+                                    <div class="modal__button">
+                                        <div class="button" id="button-1">
+                                            <div id="circle"></div>
+                                            <a href="#">Book a consultation</a>
+                                        </div>
+                                    </div>
+                                    <div class="modal__lang">
+                                        <a href="#" class="link active">En </a>
+                                        <a href="#" class="link">Ru</a>  
+                                    </div>                                 
+                                    <div class="modal__phone">
+                                        <a class="phone" href="tel:81234567890">+7 (212) 674-25-10</a>
+                                    </div>
+                                    </div>                                
+                        </div>
+                        <div class="modal__links">
+                            <div class="dropdown mobile">
+                                <button class="dropbtn mobile" onclick="myFunction()">Buy
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="mobileDropdown">
+                                <a href="#" class="dropdown-link">Category number one </a>
+                                <a href="#" class="dropdown-link">Apartments in Dubai</a>
+                                <a href="#" class="dropdown-link">Category number twenty five</a>
+                                </div>
+                            </div>
+                            <a class="modal__link" href="#">Blog</a>
+                            <a class="modal__link" href="#">About</a>
+                            <a class="modal__link" href="#">Contact</a>  
+                        </div>
+                        <div class="modal__row small">
+                            <div class="modal__logo">
+                                <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                            </div>                                                            
+                        </div>
+                        <div class="modal__links small">                            
+                               <div class="dropdown mobile">
+                                <button class="dropbtn mobile" onclick="myFunction()">Buy
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="mobileDropdown">
+                                <a href="#" class="dropdown-link">Category number one </a>
+                                <a href="#" class="dropdown-link">Apartments in Dubai</a>
+                                <a href="#" class="dropdown-link">Category number twenty five</a>
+                                </div>
+                            </div>
+                            <a class="modal__link" href="#">Blog</a>
+                            <a class="modal__link" href="#">About</a>
+                            <a class="modal__link" href="#">Contact</a>   
+                            
+                            
+                        </div>
+                        <div class="modal__contacts small">
+                            <div class="modal__button">
+                            <button class="button color">Book a consultation</button>
+                            </div>
+                            <div class="modal__phone">
+                                <a class="phone" href="tel:81234567890">+7 (212) 674-25-10</a>
+                            </div>
+                            <div class="modal__lang">
+                                <a href="#" class="link active">En </a>
+                                <a href="#" class="link">Ru</a>  
+                            </div>                                 
+                            
+                        </div>                       
+                        </div>                        
+                        <div class="modal-icon modal-icon--active">
+                        <div class="modal-icon__middle"></div>                    
+                        </div>                    
+                    </div>                                       
+                    </div>                    
+                </div>
+            </div>
+        </header>
+        <!--END HEADER-->
+
+        <!--BEGIN SERVICES-->
+        <section class="services">
+            <div class="container">
+                <div class="services__header">
+                    <p class="services__txt">Rent</p>
+                    <h3 class="services__title">Furnished Apartments<br><span>in Dubai</span></h3>
+                </div>
+                <div class="services__article">
+                    <div class="services__subtitle">
+                        <h4>Real estate investment in Dubai, UAE</h4>
+                    </div>
+                    <div class="services__block-txt">
+                        <p>This response is important for our ability to learn from mistakes, but it alsogives rise to self-criticism, because it is part of the threat-protection system. In other words, what keeps us safe can go too far, and keep us too safe. In fact it can trigger self-censoring.</p>
+                        <p>One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all:</p>
+                    </div>
+                    <div class="services__block-txt">
+                        <p>This response is important for our ability to learn from mistakes, but it alsogives rise to self-criticism, because it is part of the threat-protection system. In other words, what keeps us safe can go too far, and keep us too safe. In fact it can trigger self-censoring.</p>
+                        <p>One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all:</p>
+                    </div>
+                    <div class="services__image">
+                        <img src="./img/services/1.jpg" alt="Photo">
+                    </div>
+                    <div class="services__subtitle">
+                        <h4>Methods for Everyone</h4>
+                    </div>
+                    <div class="services__block-txt">
+                        <p>Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.</p>
+                        <p>One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all:</p>
+                    </div>
+                    <div class="services__quote">
+                        <img src="./img/review/quotes.png" alt="Image">
+                        <div class="quote__block">
+                        <p>Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. emotional sensation of stress from our firs.</p>
+                        <p class="quote__name">Paul</p>
+                        <p class="quote__author">Elite Author</p>
+                        </div>
+                    </div>
+                    <div class="services__pictures">
+                        <div class="block__pictures">
+                            <img src="./img/services/2.jpg" alt="Image">
+                            <img src="./img/services/3.jpg" alt="Image">
+                        </div>
+                        <div class="block__pictures">
+                            <img src="./img/services/4.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="services__columns">
+                        <div class="column">
+                            <div class="column__number">
+                                <p>20</p>
+                            </div>
+                            <div class="column__text">
+                                <p>YEARS<br>WORKING</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="column__number">
+                                <p>7</p>
+                            </div>
+                            <div class="column__text">
+                                <p>TALANTED<br>MANAGERS</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="column__number">
+                                <p>100<sup>+</sup></p>
+                            </div>
+                            <div class="column__text">
+                                <p>COMPLITLY<br>PROJECTS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__subtitle">
+                        <h4>Challenge</h4>
+                    </div>
+                    <div class="services__block-txt">
+                        <p>To and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.</p>
+                    </div>
+                    <div class="services__subtitle small">
+                        <h4>Everything along the way</h4>
+                    </div>
+                    <div class="services__block-txt border">
+                        <p>One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</p>
+                    </div>
+                    <ul class="services__list">
+                        <li>Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken.</li>
+                        <li>Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.</li>
+                        <li>One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. </li>
+                        <li>We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</li>
+                    </ul>
+                </div>                      
+            </div>            
+        </section>
+        <!--END SERVICES-->        
+        
+        <!--BEGIN CONTACT-US-->    
+        <section class="contact-us">            
+                 <div class="contact-us__subtitle">
+                     <h6>Do you have any questions?</h6>
+                 </div>
+                 <div class="contact-us__title">
+                     <h2>Contact us</h2>
+                 </div>
+                 <form action="send.php" method="post" class="contact-us__form">
+                     <input class="form-email" type="text" name="email" placeholder="Enter your mail">
+                     <input class="form-bth" type="submit" value="Send">
+                 </form>      
+        </section>            
+        <!--END CONTACT-US-->
+
+        <div class="container">
+        <!--BEGIN TABLE-->
+        <table class="table">
+            
+            <tr class="table__title color">
+                <td>Included in the package</td>
+                <td>Complete management</td>
+                <td>Partial control</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td class="table__title light">Real estate advertising</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row dark">
+                <td class="table__title light">Search for tenants</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td>Conclusion of a lease agreement</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row dark">
+                <td class="table__title light">Getting paid</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td class="table__title light">Key handover</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row dark">
+                <td class="table__title light">Payment processing</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td class="table__title light">Dealing with repair requests</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row dark">
+                <td class="table__title light">DEWA connection (electricity/water)</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td class="table__title light">Registration of the rental agreement Ejari</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row dark">
+                <td class="table__title light">Separate administrator</td>
+                <td class="check-color">&#10004;</td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td class="table__title light">Detailed inspection of the object</td>
+                <td></td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row dark">
+                <td class="table__title light">Property preparation before arrival</td>
+                <td></td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td class="table__title light">Reporting</td>
+                <td></td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row dark">
+                <td class="table__title light">Repair Request Management</td>
+                <td></td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+            
+            <tr class="table__row light">
+                <td class="table__title light">Repair management</td>
+                <td></td>
+                <td class="check-color">&#10004;</td>
+            </tr>
+        </table>
+        <!--END TABLE-->
+
+        <div class="services__row">
+            <div class="services__subtitle">
+                <h4>We will also propose</h4>
+            </div>
+            <div class="info__link">                            
+                <a href="#" class="link-article">View all articles<span class="arrow"></span></a>
+            </div>
+        </div>
+        <div class="services__cards">            
+                <div class="card">
+                <div class="card__title">
+                    <h5>Mortgage Registration</h5>
+                </div>                                
+                <img class="card__img" src="./img/services/5.jpg" alt="Discover Architecture">
+                <img class="card__img mob" src="./img/card/1-mob.jpg" alt="Discover Architecture">
+            </div>
+            <div class="card main-services">
+                <div class="card__content">                    
+                    <div class="card__title">
+                        <h5>Mortgage Registration</h5>
+                    </div>
+                    <div class="card__text">
+                        <p>A person applying for a mortgage in the United Arab Emirates must meet the following requirements</p>
+                    </div>
+                </div>                                                
+                <div class="card__link">
+                    <a href="#">Learn more</a><span class="arrow"></span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__title">
+                    <h5>Mortgage Registration</h5>
+                </div>                                
+                <img class="card__img" src="./img/services/6.jpg" alt="Discover Architecture">
+                <img class="card__img mob" src="./img/card/2-mob.jpg" alt="Discover Architecture">
+            </div>                        
+        </div>         
+        </div>
+        
+        <!--BEGIN FOOTER-->
+        <footer class="footer">                        
+            <div class="container">
+                <div class="footer__logo">
+                    <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>Buy</h6>
+                        </div>
+                        <a href="#" class="footer__link">Apartment in Dubai</a>
+                        <a href="#" class="footer__link">House in Dubai</a>
+                        <a href="#" class="footer__link">Apartments in Dubai</a>
+                        <a href="#" class="footer__link">Loft in Dubai</a>
+                        <a href="#" class="footer__link">Penthouse in Dubai</a>
+                        <a href="#" class="footer__link">Villa in Dubai</a>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>Services</h6>
+                        </div>
+                        <a href="#" class="footer__link">Property management in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Sell ​​property in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Rent property in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Investments in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Real estate for cryptocurrency in Dubai</a>
+                        <a href="#" class="footer__link">Moving to Dubai, UAE</a>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>Information</h6>
+                        </div>
+                        <a href="#" class="footer__link">Video</a>
+                        <a href="#" class="footer__link">Podcasts</a>
+                        <a href="#" class="footer__link">Laws</a>
+                        <a href="#" class="footer__link">Questions and answers</a>
+                        <a href="#" class="footer__link">Books</a>
+                        <a href="#" class="footer__link">Articles</a>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>About company</h6>
+                        </div>
+                        <a href="#" class="footer__link">Jobs </a>
+                        <a href="#" class="footer__link">Story</a>
+                        <a href="#" class="footer__link">Licenses</a>
+                        <a href="#" class="footer__link">Why are we</a>
+                        <a href="#" class="footer__link">Real estate agency</a>                             
+                    </div>
+                    <div class="footer__list contact">
+                        <div class="footer__list title">
+                            <h6>Contact</h6>
+                        </div>
+                        <a href="#" class="footer__link">964 Worthington Drive
+                            Dubai, UAE</a>
+                        <a href="mailto:dubairealty@mail.com" class="footer__link">dubairealty@mail.com</a>
+                        <div class="footer__button">
+                            <div class="button" id="button-1">
+                                <div id="circle"></div>
+                                <a href="#">Book a consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__nav mobile">
+                    <div class="footer__list mobile">
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_1">
+                            <label class="footer-subtitle" for="block_1">Buy<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Apartment in Dubai</a>
+                                <a href="#" class="footer__link">House in Dubai</a>
+                                <a href="#" class="footer__link">Apartments in Dubai</a>
+                                <a href="#" class="footer__link">Loft in Dubai</a>
+                                <a href="#" class="footer__link">Penthouse in Dubai</a>
+                                <a href="#" class="footer__link">Villa in Dubai</a>
+                            </div>                            
+                        </div>
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_2">
+                            <label class="footer-subtitle" for="block_2">Services<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Property management in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Sell ​​property in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Rent property in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Investments in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Real estate for cryptocurrency in Dubai</a>
+                                <a href="#" class="footer__link">Moving to Dubai, UAE  </a>
+                            </div>                            
+                        </div>
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_3">
+                            <label class="footer-subtitle" for="block_3">Information<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Video</a>
+                                <a href="#" class="footer__link">Podcasts</a>
+                                <a href="#" class="footer__link">Laws</a>
+                                <a href="#" class="footer__link">Questions and answers</a>
+                                <a href="#" class="footer__link">Books</a>
+                                <a href="#" class="footer__link">Articles  </a>
+                            </div>                            
+                        </div>
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_4">
+                            <label class="footer-subtitle" for="block_4">About company<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Jobs </a>
+                                <a href="#" class="footer__link">Story</a>
+                                <a href="#" class="footer__link">Licenses</a>
+                                <a href="#" class="footer__link">Why are we</a>
+                                <a href="#" class="footer__link">Real estate agency</a>                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="footer__list contact mobile">
+                        <div class="footer__list title">
+                            <h6>Contact</h6>
+                        </div>
+                        <a href="#" class="footer__link">964 Worthington Drive
+                            Dubai, UAE</a>
+                            <div class="footer__contact mobile">
+                                <a href="mailto:dubairealty@mail.com" class="footer__link">dubairealty@mail.com</a>
+                            <div class="footer__button">
+                                <div class="button" id="button-1">
+                                    <div id="circle"></div>
+                                    <a href="#">Book a consultation</a>
+                                </div>
+                            </div>
+                            </div>                        
+                    </div>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__copyright">
+                        <p>Copyright © 2022 Dubai Realty</p>
+                    </div>
+                    <div class="footer__socials">
+                        <a class="social-icon social-icon--twitter">
+                            <span class="ico ico_tw"></span>
+                          <div class="tooltip">Twitter</div>
+                        </a>
+                        <a class="social-icon social-icon--instagram">
+                            <span class="ico ico_inst"></span>
+                          <div class="tooltip">Instagram</div>
+                        </a>
+                        <a class="social-icon social-icon--linkedin">
+                            <span class="ico ico_in"></span>
+                          <div class="tooltip">LinkedIn</div>
+                        </a>
+                        <a class="social-icon social-icon--facebook">
+                            <span class="ico ico_fb"></span>
+                          <div class="tooltip">Facebook</div>
+                        </a>
+                        <a class="social-icon social-icon--youtube">
+                            <span class="ico ico_yt"></span>
+                          <div class="tooltip">Youtube</div>
+                        </a>
+                    </div>
+            </div>   
+        </div>
+        
+        </div>
+        </footer>
+        <!--END FOOTER--> 
+
+        </div>
+        <!--END WRAPPER-->     
+    <!-- User scripts -->
+    <script src="./js/main.js"></script> 
+</body>
+</html>

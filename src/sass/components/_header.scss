@@ -1,0 +1,125 @@
+.header {
+    padding: 2rem 0 0;
+    margin-bottom: 2.6rem;
+    @include media-tablet {        
+        padding: 1.6rem 0 0;
+        margin-bottom: 2.1rem; 
+    }  
+    @include media-mobilesmall {
+        margin-bottom: 1.9rem; 
+    }     
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+  
+
+.header__block {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tablet {
+        width: 30%;
+    }
+    @include media-mobile {
+        width: 75%;
+    }
+}
+
+.header__logo {
+    width: 30%;    
+    @include media-tabletbig {
+        width: 30%;       
+    }
+    @include media-tablet {        
+        width: 60%;
+    }
+    @include media-mobile {
+        width: 40%;
+    }    
+}
+
+.header__bar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;       
+    .link  {        
+        @extend %transition;
+        color: $color-heading;    
+        @extend %font-add;
+        @include font ($size: 1.4rem, $height: 1.2, $weight: 500, $style: normal);
+        &:hover,:focus {
+            color: $color-add;
+        }               
+    }
+    @include media-tabletbig {
+        width: 70%;
+    }
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.header__links {
+    display: flex;
+    column-gap: 1rem;    
+}
+
+.header__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+    @include media-tablet {
+        width: 62%;
+    }
+    @include media-mobile {
+        width: 30%;
+        justify-content: flex-end;        
+    } 
+}
+
+.header__button {    
+    margin-right: 5rem;
+    @include media-tabletbig {
+        margin-right: 2rem;
+    }
+    @include media-tablet {
+        margin-right: 0;
+    }
+    @include media-mobile {
+        display: none; 
+    }    
+}
+
+.header__phone {
+    margin-left: 0;
+    @extend %font-add;
+    @include font ($size: 1.6rem, $height: 1.25, $weight: 600, $style: normal);
+    @include media-tabletbig {
+        margin-left: 0;
+        @include font ($size: 1.4rem, $height: 1.25, $weight: 600, $style: normal);
+    }    
+    @include media-mobile {
+        display: none; 
+    }                        
+}
+
+.phone {    
+    @extend %font-add;
+    @include font ($size: 1.6rem, $height: 1.25, $weight: 600, $style: normal);
+    text-decoration: none;
+    color: $color-heading;    
+}
+
+.header__lang {
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    @include media-mobile {
+        display: none; 
+    }
+}

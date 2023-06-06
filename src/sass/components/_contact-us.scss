@@ -1,0 +1,88 @@
+.contact-us { 
+    width: 100%;
+    padding: 8.7rem 0 8.5rem;   
+    background-image: url(../../img/contact-us/contact-us.jpg);
+    background-size: cover;
+    @include media-tablet {
+        padding: 4.8rem 0 6.1rem;   
+    }
+    @include media-mobilesmall {
+        padding: 4.9rem 0 5rem;  
+    }
+}
+.contact-us.apartaments {
+    margin-bottom: 21rem;
+    @include media-tablet {
+        margin-bottom: 16rem;
+    }
+    @include media-mobilesmall {
+        margin-bottom: 7rem;
+    }
+}
+.contact-us__subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: $color-background;
+    @include media-tablet {
+        margin-bottom: 0; 
+    }
+    @include media-mobilesmall {
+        margin-bottom: 1.9rem;  
+    }
+}
+
+.contact-us__title {
+    margin-bottom: 5.2rem;
+    @extend %font-add;
+    @include font ($size: 12rem, $height: 0.5, $weight: 700, $style: normal);
+    color: $color-background;
+    text-align: center;
+    @include media-tablet {
+        margin-bottom: 0; 
+        @include font ($size: 7rem, $height: 1.25, $weight: 700, $style: normal);
+    }
+    @include media-mobilesmall {
+        margin-bottom: 2.9rem; 
+        @include font ($size: 5rem, $height: 1.25, $weight: 700, $style: normal); 
+    }
+}
+
+.contact-us__form {    
+    width: 47.2rem;
+    margin: 0 auto;
+    display: flex;
+    @include media-tablet {
+        width: 45rem;
+    }
+    @include media-mobilesmall {
+        width: 28.8rem;
+    }
+}
+
+.form-email {
+    padding: 2.5rem 0 2.2rem 4.2rem;
+    width: 30.7rem;
+    text-align: left;
+    @extend %font-prim;
+    @include font ($size: 1.2rem, $height: 1.2, $weight: 400, $style: normal);
+    color: $color-background;
+    @include media-tablet {
+        padding: 1.3rem 0 1.4rem 2.8rem;        
+    }
+    @include media-mobilesmall {
+        padding: 1.3rem 0 1.4rem 1.4rem;
+    }
+}
+.form-bth {
+    padding: 2.3rem 6.5rem 2.2rem;
+    background-color: $color-background;
+    color: $color-heading;
+    @extend %font-prim;
+    @include font ($size: 1.4rem, $height: 1.1, $weight: 600, $style: normal);
+    @include media-tablet {
+        padding: 1.2rem 6.5rem 1.3rem 6.5rem;         
+    }
+    @include media-mobilesmall {
+        padding: 1.2rem 3.6rem 1.3rem 3.6rem;
+    }
+}

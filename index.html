@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai</title>    
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- OwlCarousel CSS styles --> 
+    <link rel="stylesheet" href="./libs/owlCarousel2/assets/owl.carousel.min.css">    
+</head>
+<body>
+    <!--BEGIN WRAPPER-->
+    <div class="wrapper">
+        <!--BEGIN HEADER-->
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__block">
+                        <div class="header__logo">
+                            <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                        </div>
+                        <div class="header__bar">                            
+                                <div class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">Buy
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                    <a href="#" class="dropdown-link">Category number one </a>
+                                    <a href="apartaments.html" class="dropdown-link">Apartments in Dubai</a>
+                                    <a href="#" class="dropdown-link">Category number twenty five</a>
+                                    </div>
+                                </div>
+                                <div class="header__links">                              
+                                <a href="blog.html" class="link">Blog</a>
+                                <a href="services.html" class="link">About</a>
+                                <a href="contacts.html" class="link">Contact</a>   
+                                </div>                                                        
+                        </div>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="header__button">
+                            <div class="button" id="button-1">
+                                <div id="circle"></div>
+                                <a href="#">Book a consultation</a>
+                            </div>                        
+                    </div>
+                    <div class="header__lang">
+                        <a href="#" class="link active">En </a>
+                        <a href="#" class="link">Ru</a>  
+                    </div>                                 
+                    <div class="header__phone">
+                        <a class="phone" href="tel:81234567890">+7 (212) 674-25-10</a>
+                    </div>                    
+                    
+                    <div class="modal">                        
+                        <div class="modal__nav modal__nav--active">
+                        <div class="modal__row">
+                                <div class="modal__logo">
+                                    <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                                </div>
+                                <div class="modal__contacts">
+                                    <div class="modal__button">
+                                        <div class="button" id="button-1">
+                                            <div id="circle"></div>
+                                            <a href="#">Book a consultation</a>
+                                        </div>
+                                    </div>
+                                    <div class="modal__lang">
+                                        <a href="#" class="link active">En </a>
+                                        <a href="#" class="link">Ru</a>  
+                                    </div>                                 
+                                    <div class="modal__phone">
+                                        <a class="phone" href="tel:81234567890">+7 (212) 674-25-10</a>
+                                    </div>
+                                    </div>                                
+                        </div>
+                        <div class="modal__links">
+                            <div class="dropdown mobile">
+                                <button class="dropbtn mobile" onclick="myFunction()">Buy
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="mobileDropdown">
+                                <a href="#" class="dropdown-link">Category number one </a>
+                                <a href="#" class="dropdown-link">Apartments in Dubai</a>
+                                <a href="#" class="dropdown-link">Category number twenty five</a>
+                                </div>
+                            </div>
+                            <a class="modal__link" href="#">Blog</a>
+                            <a class="modal__link" href="#">About</a>
+                            <a class="modal__link" href="#">Contact</a>  
+                        </div>
+                        <div class="modal__row small">
+                            <div class="modal__logo">
+                                <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                            </div>                                                            
+                        </div>
+                        <div class="modal__links small">                            
+                               <div class="dropdown mobile">
+                                <button class="dropbtn mobile" onclick="myFunction()">Buy
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" id="mobileDropdown">
+                                <a href="#" class="dropdown-link">Category number one </a>
+                                <a href="#" class="dropdown-link">Apartments in Dubai</a>
+                                <a href="#" class="dropdown-link">Category number twenty five</a>
+                                </div>
+                            </div>
+                            <a class="modal__link" href="#">Blog</a>
+                            <a class="modal__link" href="#">About</a>
+                            <a class="modal__link" href="#">Contact</a>   
+                            
+                            
+                        </div>
+                        <div class="modal__contacts small">
+                            <div class="modal__button">
+                            <button class="button color">Book a consultation</button>
+                            </div>
+                            <div class="modal__phone">
+                                <a class="phone" href="tel:81234567890">+7 (212) 674-25-10</a>
+                            </div>
+                            <div class="modal__lang">
+                                <a href="#" class="link active">En </a>
+                                <a href="#" class="link">Ru</a>  
+                            </div>                                 
+                            
+                        </div>                       
+                        </div>                        
+                        <div class="modal-icon modal-icon--active">
+                        <div class="modal-icon__middle"></div>                    
+                        </div>                    
+                    </div>                                       
+                    </div>                    
+                </div>
+            </div>
+        </header>
+        <!--END HEADER-->
+
+        <!--BEGIN MAIN-->
+        <main class="main">
+            <div class="container">
+                <div class="main__wrapper">
+                <div class="main__content">
+                    <div class="main__text">
+                        <p class="text small">Lorem ipsum</p>
+                    </div>
+                    <div class="main__title">
+                        <h1>Welcome home<br><span>to</span> luxury</h1>
+                    </div>
+                    <div class="main__link">
+                        <a href="#" class="link-advice">Book a consultation<span class="arrow"></span></a>
+                    </div>
+                </div>
+                <div class="main__social">
+                    <div class="social-icons">
+                        <a class="social-icon social-icon--twitter">
+                            <span class="ico ico_tw"></span>
+                          <div class="tooltip">Twitter</div>
+                        </a>
+                        <a class="social-icon social-icon--instagram">
+                            <span class="ico ico_inst"></span>
+                          <div class="tooltip">Instagram</div>
+                        </a>
+                        <a class="social-icon social-icon--linkedin">
+                            <span class="ico ico_in"></span>
+                          <div class="tooltip">LinkedIn</div>
+                        </a>
+                        <a class="social-icon social-icon--facebook">
+                            <span class="ico ico_fb"></span>
+                          <div class="tooltip">Facebook</div>
+                        </a>
+                        <a class="social-icon social-icon--youtube">
+                            <span class="ico ico_yt"></span>
+                          <div class="tooltip">Youtube</div>
+                        </a>
+                    </div>
+                    <!--<div class="social">
+                        <a href="#" class="icon">
+                            <span class="ico ico_fb"></span>
+                        </a>
+                        <a href="#" class="icon">
+                            <span class="ico ico_tw"></span>
+                        </a>
+                        <a href="#" class="icon">
+                            <span class="ico ico_yt"></span>
+                        </a>
+                        <a href="#" class="icon">
+                            <span class="ico ico_inst"></span>
+                        </a>
+                        <a href="#" class="icon">
+                            <span class="ico ico_in"></span>
+                        </a>
+                    </div>-->
+                </div>
+                <div class="main__block">
+                    <div class="layout-3-columns">
+                        <div class="main__col">
+                            <div class="column__num active">
+                                <p>01</p>
+                            </div >
+                            <div class="column__desc">
+                                <p>Lorem Ipsum Dolorem apset</p>
+                            </div>
+                        </div>
+                        <div class="main__col">
+                            <div class="column__num">
+                                <p>02</p>
+                            </div>
+                            <div class="column__desc">
+                                <p>Lorem Ipsum Dolorem apset</p>
+                            </div>
+                        </div>
+                        <div class="main__col">
+                            <div class="column__num">
+                                <p>03</p>
+                            </div>
+                            <div class="column__desc">
+                                <p>Lorem Ipsum Dolorem apset</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div> 
+                </div>
+                <div class="main__block mobile">
+                    <div class="layout-3-columns">
+                        <div class="main__col">
+                            <div class="column__num active">
+                                <p>01</p>
+                            </div >
+                            <div class="column__desc">
+                                <p>Lorem Ipsum Dolorem apset</p>
+                            </div>
+                        </div>
+                        <div class="main__col">
+                            <div class="column__num">
+                                <p>02</p>
+                            </div>
+                            <div class="column__desc">
+                                <p>Lorem Ipsum Dolorem apset</p>
+                            </div>
+                        </div>
+                        <div class="main__col">
+                            <div class="column__num">
+                                <p>03</p>
+                            </div>
+                            <div class="column__desc">
+                                <p>Lorem Ipsum Dolorem apset</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </main>
+        <!--END MAIN-->
+        
+        <!--BEGIN PROJECTS-->
+        <section class="projects">
+            <div class="container">
+                <div class="projects__row">
+                    <div class="projects__title">
+                        <h3>Latest projects</h3>                    
+                    </div>
+                    <div class="projects__nav">                            
+                            <a class="projects__nav__item active" href="#">All</a>
+                            <a class="projects__nav__item" href="#">Building</a>
+                            <a class="projects__nav__item" href="#">Interior</a>
+                            <a class="projects__nav__item italic" href="#">View all projects</a>
+                    </div>
+                </div>
+                <div class="projects__slider">
+                    <div class="owl-carousel owl-theme" id="project-carousel">
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                <h5>Villas</h5>
+                                </div>                                
+                                <img src="./img/projects/1.jpg" alt="Villas">
+                            </a>                                
+                        </div>
+                        <div class="slide">                                                                
+                            <div class="slide__title">
+                                <h5>Villas</h5>
+                                </div>                                
+                                <img src="./img/projects/3.jpg" alt="Villas">                                                        
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                <h5>Houses</h5>
+                            </div>                                
+                            <img src="./img/projects/2.jpg" alt="Houses">
+                            </a>                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                <h5>Villas</h5>
+                            </div>                                
+                            <img src="./img/projects/3.jpg" alt="Villas"> 
+                            </a>                                                                                            
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Houses</h5>
+                                </div>                                
+                                <img src="./img/projects/2.jpg" alt="Houses">
+                            </a>                                                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Villas</h5>
+                                </div>                                
+                                <img src="./img/projects/3.jpg" alt="Villas">
+                            </a>                                                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Houses</h5>
+                                </div>                                
+                                <img src="./img/projects/2.jpg" alt="Houses">  
+                            </a>                                                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Villas</h5>
+                                </div>                                    
+                                <img src="./img/projects/3.jpg" alt="Villas">
+                            </a>                                                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Houses</h5>
+                                </div>                                
+                                <img src="./img/projects/2.jpg" alt="Houses">
+                            </a>                                                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Villas</h5>
+                                </div>                                
+                                <img src="./img/projects/3.jpg" alt="Villas">
+                            </a>                                                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Houses</h5>
+                                </div>                                
+                                <img src="./img/projects/2.jpg" alt="Houses"> 
+                            </a>                                                                
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <div class="slide__title">
+                                    <h5>Villas</h5>
+                                </div>                                
+                                <img src="./img/projects/3.jpg" alt="Villas">
+                            </a>                                                                
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!--END PROJECTS-->
+
+        <!--BEGIN ARTICLE-->
+        <section class="article">
+            <div class="container">
+                <div class="article__top">
+                    <h6 class="article__subtitle">Our expertise</h6>
+                    <h2 class="article__title">"The best apartment in Dubai" we will find your dream</h2>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel. In efficitur vehicula magna, varius pellentesque nisl vehicula vel. Aenean vel sem ac elit commodo finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis sollicitudin. Etiam auctor mollis justo eu tincidunt. Aliquam varius varius tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas nec orci quis sem condimentum dapibus varius a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="article__video">
+                    <video class="video" controls preload="metadata">
+                        <source src="video/1.webm" type="video/webm">
+                        <source src="video/1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="article__bottom">
+                    <div class="article__quote">
+                        <p class="quote">“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.”<span class="quote add-color"> — Mary Kay Ash </span></p>
+                    </div>
+                    <div class="article__row">
+                        <div class="article__col">
+                            <div class="article__img">
+                                <img src="./img/article/1.jpg" alt="Photo">
+                            </div>
+                            <div class="article__content">
+                                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+                            </div>
+                        </div>
+                        <div class="article__col">
+                            <div class="article__img">
+                                <img src="./img/article/2.jpg" alt="Photo">
+                            </div>
+                            <div class="article__content">
+                                <p>Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci feugiat vel. Curabitur eget lectus lectus. Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum est, eu suscipit dui lorem a dui. Aliquam rhoncus risus in leo vestibulum efficitur. Suspendisse tortor quam, faucibus a lacinia a, bibendum vitae quam. Suspen disse et metus et orci rutrum dictum eu eu nibh. Suspendisse blandit in diam in rhoncus. Nam volutpat hendrerit enim, sed aliquet quam gravida at. Nullam dictum sagittis nisi, eu porta sem mollis eu. Nulla faucibus sed ipsum sed sodales. Curabitur varius iaculis felis, in aliquet sem suscipit quis. Ut vulputate, magna ac bibendum elementum, nulla magna tincidunt urna, a venenatis dolor arcu sed leo. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END ARTICLE-->
+
+        <!--BEGIN CONTACT-US-->
+        <section class="contact-us">
+            <div class="container">
+                <div class="contact-us__subtitle">
+                    <h6>Do you have any questions?</h6>
+                </div>
+                <div class="contact-us__title">
+                    <h2>Contact us</h2>
+                </div>
+                <form action="send.php" method="post" class="contact-us__form">
+                    <input class="form-email" type="text" name="email" placeholder="Enter your mail">
+                    <input class="form-bth" type="submit" value="Send">
+                </form>
+            </div> 
+        </section>            
+        <!--END CONTACT-US-->
+
+        <!--BEGIN INFO-->
+        <section class="info">
+            <div class="container">                    
+                <div class="info__row">
+                    <div class="info__title">
+                        <h2>Useful articles</h2>
+                    </div>
+                    <div class="info__link">                            
+                        <a href="#" class="link-article">View all articles<span class="arrow"></span></a>
+                    </div>
+                </div>
+                <div class="info__cards">
+                    <div class="card">
+                        <div class="card__title">
+                            <h5>Discover Architecture</h5>
+                        </div>                                
+                        <img class="card__img" src="./img/card/1.jpg" alt="Discover Architecture">
+                        <img class="card__img mob" src="./img/card/1-mob.jpg" alt="Discover Architecture">
+                    </div>
+                    <div class="card main">
+                        <div class="card__content">
+                            <div class="card__date">
+                            <p>Jule 03, 2022</p>
+                            </div>
+                            <div class="card__title">
+                                <h5>Discover Architecture</h5>
+                            </div>
+                            <div class="card__text">
+                                <p>Projects for many large domestic and foreign corporations, enterprises in many elds such</p>
+                            </div>
+                        </div>
+                                                        
+                        <div class="card__link">
+                            <a href="#">Learn more</a><span class="arrow active"></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title">
+                            <h5>Discover Architecture</h5>
+                        </div>                                
+                        <img class="card__img" src="./img/card/2.jpg" alt="Discover Architecture">
+                        <img class="card__img mob" src="./img/card/2-mob.jpg" alt="Discover Architecture">
+                    </div>
+                </div> 
+            </div>
+                    
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="swiper__quotes" src="./img/review/quotes.png" alt="Photo">
+                        <div class="slide-wrapper">
+                            <div class="swiper__desc">
+                                <img class="swiper__img" src="./img/review/1.jpg" alt="">                                
+                            <div class="swiper__name"><h5>Paul</h5></div>
+                            <div class="swiper__subtitle">
+                                <p>Owner in <a href="#" class="swiper__link">Paul.com</a></p>
+                            </div>
+                            </div>                                
+                            <div class="swiper__text">
+                                <p>Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.</p>
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="swiper__quotes" src="./img/review/quotes.png" alt="Photo">
+                        <div class="slide-wrapper">
+                            <div class="swiper__desc">
+                                <img class="swiper__img" src="./img/review/2.jpg" alt="">                                
+                            <div class="swiper__name"><h5>Robert</h5></div>
+                            <div class="swiper__subtitle">
+                                <p>Founder in  <a href="#" class="swiper__link">Apple inc.</a></p>
+                            </div>
+                            </div>                                
+                            <div class="swiper__text">
+                                <p>Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.</p>
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="swiper__quotes" src="./img/review/quotes.png" alt="Photo">
+                        <div class="slide-wrapper">
+                            <div class="swiper__desc">
+                                <img class="swiper__img" src="./img/review/1.jpg" alt="">                                
+                                <div class="swiper__name"><h5>Paul</h5></div>
+                                <div class="swiper__subtitle">
+                                    <p>Owner in <a href="#" class="swiper__link">Paul.com</a></p>
+                                </div>
+                            </div>                     
+                            <div class="swiper__text">
+                                <p>Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.</p>
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="swiper__quotes" src="./img/review/quotes.png" alt="Photo">
+                        <div class="slide-wrapper">
+                            <div class="swiper__desc">
+                                <img class="swiper__img" src="./img/review/2.jpg" alt="">                                
+                            <div class="swiper__name"><h5>Robert</h5></div>
+                            <div class="swiper__subtitle">
+                                <p>Founder in  <a href="#" class="swiper__link">Apple inc.</a></p>
+                            </div>
+                            </div>                                
+                            <div class="swiper__text">
+                                <p>Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                                </p>
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="swiper__quotes" src="./img/review/quotes.png" alt="Photo">
+                        <div class="slide-wrapper">
+                            <div class="swiper__desc">
+                                <img class="swiper__img" src="./img/review/1.jpg" alt="">                                
+                            <div class="swiper__name"><h5>Paul</h5></div>
+                            <div class="swiper__subtitle">
+                                <p>"Owner in " <a href="#" class="swiper__link">Paul.com</a></p>
+                            </div>
+                            </div>                        
+                            <div class="swiper__text">
+                                <p>Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                                </p>
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="swiper__quotes" src="./img/review/quotes.png" alt="Photo">
+                        <div class="slide-wrapper">
+                            <div class="swiper__desc">
+                                <img class="swiper__img" src="./img/review/2.jpg" alt="">                                
+                        <div class="swiper__name"><h5>Robert</h5></div>
+                        <div class="swiper__subtitle">
+                            <p>Founder in <a href="#" class="swiper__link">Apple inc.</a></p>
+                        </div>
+                            </div>                                
+                        <div class="swiper__text">
+                            <p>Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.</p>
+                        </div>
+                        </div>                            
+                    </div>
+
+                </div>                        
+            </div>                                         
+                
+            <div class="questions">
+                <div class="container">
+                    <div class="questions__title">
+                        <h3>FAQ</h3>
+                    </div>
+                    <div class="questions__list">
+                        <div class="questions__item">
+                            <input class="input" type="checkbox" name="questions" id="item_1">
+                            <label class="questions-subtitle" for="item_1">The largest and oldest Quotations Page on the Web with about 30 categories<span class="questions__arrow active"></span></label>
+                            <div class="questions-text">
+                                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <input class="input" type="checkbox" name="questions" id="item_2">
+                            <label class="questions-subtitle" for="item_2">A huge collection of inspirational quotes, thoughts of greatest minds in history<span class="questions__arrow active"></span></label>
+                            <div class="questions-text">
+                                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+                            </div>
+                        </div>
+                    <div class="questions__item">
+                        <input class="input" type="checkbox" name="questions" id="item_3">
+                        <label class="questions-subtitle" for="item_3">Quotations from the great works of literature<span class="questions__arrow active"></span></label>
+                        <div class="questions-text">
+                            <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <input class="input" type="checkbox" name="questions" id="item_4">
+                        <label class="questions-subtitle" for="item_4">Read quotes and sayings from famous people in history<span class="questions__arrow active"></span></label>
+                        <div class="questions-text">
+                            <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <input class="input" type="checkbox" name="questions" id="item_5">
+                         <label class="questions-subtitle" for="item_5">Collected quotes from Albert Einstein<span class="questions__arrow active"></span></label>
+                        <div class="questions-text">
+                            <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+                        </div>
+                    </div> 
+                    </div> 
+                </div>
+            </div>                
+        </section>
+        <!--END INFO-->
+        
+        <!--BEGIN FOOTER-->
+        <footer class="footer">                        
+            <div class="container">
+                <div class="footer__logo">
+                    <img class="logo" src="./img/logo/logo-main.svg" alt="DubaiRealty">
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>Buy</h6>
+                        </div>
+                        <a href="#" class="footer__link">Apartment in Dubai</a>
+                        <a href="#" class="footer__link">House in Dubai</a>
+                        <a href="#" class="footer__link">Apartments in Dubai</a>
+                        <a href="#" class="footer__link">Loft in Dubai</a>
+                        <a href="#" class="footer__link">Penthouse in Dubai</a>
+                        <a href="#" class="footer__link">Villa in Dubai</a>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>Services</h6>
+                        </div>
+                        <a href="#" class="footer__link">Property management in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Sell ​​property in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Rent property in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Investments in Dubai, UAE</a>
+                        <a href="#" class="footer__link">Real estate for cryptocurrency in Dubai</a>
+                        <a href="#" class="footer__link">Moving to Dubai, UAE</a>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>Information</h6>
+                        </div>
+                        <a href="#" class="footer__link">Video</a>
+                        <a href="#" class="footer__link">Podcasts</a>
+                        <a href="#" class="footer__link">Laws</a>
+                        <a href="#" class="footer__link">Questions and answers</a>
+                        <a href="#" class="footer__link">Books</a>
+                        <a href="#" class="footer__link">Articles</a>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list title">
+                            <h6>About company</h6>
+                        </div>
+                        <a href="#" class="footer__link">Jobs </a>
+                        <a href="#" class="footer__link">Story</a>
+                        <a href="#" class="footer__link">Licenses</a>
+                        <a href="#" class="footer__link">Why are we</a>
+                        <a href="#" class="footer__link">Real estate agency</a>                             
+                    </div>
+                    <div class="footer__list contact">
+                        <div class="footer__list title">
+                            <h6>Contact</h6>
+                        </div>
+                        <a href="#" class="footer__link">964 Worthington Drive
+                            Dubai, UAE</a>
+                        <a href="mailto:dubairealty@mail.com" class="footer__link">dubairealty@mail.com</a>
+                        <div class="footer__button">
+                            <div class="button" id="button-1">
+                                <div id="circle"></div>
+                                <a href="#">Book a consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__nav mobile">
+                    <div class="footer__list mobile">
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_1">
+                            <label class="footer-subtitle" for="block_1">Buy<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Apartment in Dubai</a>
+                                <a href="#" class="footer__link">House in Dubai</a>
+                                <a href="#" class="footer__link">Apartments in Dubai</a>
+                                <a href="#" class="footer__link">Loft in Dubai</a>
+                                <a href="#" class="footer__link">Penthouse in Dubai</a>
+                                <a href="#" class="footer__link">Villa in Dubai</a>
+                            </div>                            
+                        </div>
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_2">
+                            <label class="footer-subtitle" for="block_2">Services<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Property management in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Sell ​​property in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Rent property in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Investments in Dubai, UAE</a>
+                                <a href="#" class="footer__link">Real estate for cryptocurrency in Dubai</a>
+                                <a href="#" class="footer__link">Moving to Dubai, UAE  </a>
+                            </div>                            
+                        </div>
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_3">
+                            <label class="footer-subtitle" for="block_3">Information<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Video</a>
+                                <a href="#" class="footer__link">Podcasts</a>
+                                <a href="#" class="footer__link">Laws</a>
+                                <a href="#" class="footer__link">Questions and answers</a>
+                                <a href="#" class="footer__link">Books</a>
+                                <a href="#" class="footer__link">Articles  </a>
+                            </div>                            
+                        </div>
+                        <div class="footer__item">
+                            <input class="footer__input" type="checkbox" name="block" id="block_4">
+                            <label class="footer-subtitle" for="block_4">About company<span class="footer__arrow"></span></label>
+                            <div class="footer__block">
+                                <a href="#" class="footer__link">Jobs </a>
+                                <a href="#" class="footer__link">Story</a>
+                                <a href="#" class="footer__link">Licenses</a>
+                                <a href="#" class="footer__link">Why are we</a>
+                                <a href="#" class="footer__link">Real estate agency</a>                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="footer__list contact mobile">
+                        <div class="footer__list title">
+                            <h6>Contact</h6>
+                        </div>
+                        <a href="#" class="footer__link">964 Worthington Drive
+                            Dubai, UAE</a>
+                            <div class="footer__contact mobile">
+                                <a href="mailto:dubairealty@mail.com" class="footer__link">dubairealty@mail.com</a>
+                            <div class="footer__button">
+                                <div class="button" id="button-1">
+                                    <div id="circle"></div>
+                                    <a href="#">Book a consultation</a>
+                                </div>
+                            </div>
+                            </div>                        
+                    </div>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__copyright">
+                        <p>Copyright © 2022 Dubai Realty</p>
+                    </div>                                           
+                        <div class="footer__socials">
+                            <a class="social-icon social-icon--twitter">
+                                <span class="ico ico_tw"></span>
+                              <div class="tooltip">Twitter</div>
+                            </a>
+                            <a class="social-icon social-icon--instagram">
+                                <span class="ico ico_inst"></span>
+                              <div class="tooltip">Instagram</div>
+                            </a>
+                            <a class="social-icon social-icon--linkedin">
+                                <span class="ico ico_in"></span>
+                              <div class="tooltip">LinkedIn</div>
+                            </a>
+                            <a class="social-icon social-icon--facebook">
+                                <span class="ico ico_fb"></span>
+                              <div class="tooltip">Facebook</div>
+                            </a>
+                            <a class="social-icon social-icon--youtube">
+                                <span class="ico ico_yt"></span>
+                              <div class="tooltip">Youtube</div>
+                            </a>
+                        </div>               
+            </div>   
+        </div>        
+        </div>
+        </footer>
+        <!--END FOOTER-->
+    </div>
+    <!--END WRAPPER-->
+    
+    <!-- Vendor scripts -->
+        <script src="./libs/jquery/jquery-3.6.4.min.js"></script>
+        <script src="./libs/owlCarousel2/owl.carousel.min.js"></script> 
+        <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <!-- User scripts -->
+        <script src="./js/main.js"></script>
+</body>
+</html>

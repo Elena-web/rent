@@ -1,0 +1,41 @@
+.slide {      
+    position: relative;
+    @include media-tablet {
+        
+    }
+    @include media-mobilesmall {
+              
+    }
+}
+
+.slide__title {
+    @extend %font-add;
+    @include font ($size: 3.2rem, $height: 1.4, $weight: 700, $style: normal);
+    color: $color-heading;
+    position: absolute;
+    bottom: 5rem;
+    left: 4rem;
+    @include media-tabletbig {
+        bottom: 3.6rem;
+        left: 1.5rem;
+    }
+    @include media-tablet {
+        @include font ($size: 1.8rem, $height: 1.2, $weight: 700, $style: normal);
+        bottom: 2.6rem;
+        left: 1.5rem;
+    }   
+    @include media-mobilesmall {
+        bottom: 1.2rem;
+        left: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

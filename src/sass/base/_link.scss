@@ -1,0 +1,102 @@
+.link {
+    display: inline-block;
+    @extend %font-add;
+    @include font ($size: 1.4rem, $height: 1.2, $weight: 600, $style: normal);
+    margin-right: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-link;
+    &:hover,:focus {
+        color: $color-add;
+    }
+}
+
+.link:last-child {
+    margin-right: 0;
+}
+
+.link-advice {
+    display: inline-flex;
+    align-items: center;   
+    color: $color-heading;
+    cursor: pointer;     
+    &:hover,:focus {
+        color: $color-add;
+        span {            
+            background: url('/img/icons/arrow-color.svg') no-repeat;
+        }        
+    }      
+}
+
+.link-dark {
+    display: inline-block;
+    @extend %font-prim;
+    @include font ($size: 2rem, $height: 1.1, $weight: 700, $style: normal);
+    color: $color-background;
+    span{ 
+        width: 1rem;       
+        background: url('/img/icons/arrow-dark.svg') no-repeat;
+        background-size: contain;
+    }
+    @include media-tablet {
+        @include font ($size: 1.2rem, $height: 1.2, $weight: 700, $style: normal);
+    }
+    @include media-mobilesmall {
+        @include font ($size: 1.2rem, $height: 1.2, $weight: 700, $style: normal);
+    }
+}
+
+.link-article { 
+    display: inline-flex;
+    align-items: center;   
+    @extend %font-add;
+    @include font ($size: 1.6rem, $height: 1.3, $weight: 600, $style: normal);
+    color: $color-link;
+    .arrow {
+        width: 1.3rem;
+        background: url('/img/icons/arrow-grey.svg') no-repeat;
+        background-size: contain;
+         @include media-tabletbig {
+            width: 1rem;
+        }
+        @include media-mobilesmall {
+            width: 0.8rem;
+        }        
+    }
+    &:hover,:focus {
+        color: $color-add;
+        span {
+        background: url('/img/icons/arrow-color.svg') no-repeat;
+        }
+    } 
+    @include media-tablet {
+        @include font ($size: 1.2rem, $height: 1.25, $weight: 600, $style: normal);
+    }
+    @include media-mobilesmall {
+        @include font ($size: 0.8rem, $height: 1.25, $weight: 600, $style: normal);
+    }
+}
+
+.link.active {
+    color: $color-add;
+}
+
+.link-blog {
+    display: inline-flex;
+    align-items: center;
+    @extend %font-prim;
+    @include font ($size: 1.6rem, $height: 1.5, $weight: 600, $style: normal);
+    text-decoration: none;
+    color: $color-heading;    
+    &:hover,:focus {
+        color: $color-add;
+        span {            
+            background: url('/img/icons/arrow-color.svg') no-repeat; 
+                      
+            }
+    }                 
+}
+.link-blog .arrow {
+    width: 1.8rem;
+    height: 1.8rem;    
+}

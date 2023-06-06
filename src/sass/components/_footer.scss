@@ -1,0 +1,216 @@
+.footer {
+    padding: 7rem 0 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    @include media-tablet {
+        padding: 4rem 0 4.1rem;
+    } 
+    @include media-mobilesmall {
+        padding: 4rem 0 2.1rem;
+    }  
+}           
+
+.footer__logo {
+    width: 18.4rem;
+    margin: 0 auto 5.1rem;    
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.footer__nav.mobile {
+    display: none;
+    @include media-tablet {
+        display: block;
+    }
+}
+.footer__list.mobile {
+    min-width: 100%;
+}
+
+.footer__item {
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid $color-footer-item;
+    &:last-child {
+        border-bottom: none;
+    }    
+}
+
+.footer__input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    appearance: none;
+}
+
+.footer__input:checked + label>span {
+    transform: rotate(90deg);    
+}
+
+.footer__input:hover + label:hover {
+    color: $color-add;
+    cursor: pointer;
+}
+ 
+.footer__input:checked ~ .footer__block {
+    display: block;    
+}
+
+.footer-subtitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    @extend %font-prim;
+    @include font ($size: 1.8rem, $height: 1.2, $weight: 400, $style: normal);
+    color: $color-main;
+}
+
+.footer__arrow {
+    background: url('/img/icons/arrow.svg') no-repeat;
+    background-size: contain;
+    display: inline-block;  
+    height: 1.5rem;
+    width: 1.3rem;
+    transform: rotate(90deg);
+}
+
+.footer__block {
+    display: none;
+    width: 98rem;
+    margin: 1rem auto 2rem;
+    @extend %font-prim;
+    @include font ($size: 1.4rem, $height: 1.6, $weight: 400, $style: normal);
+    color: $color-text;
+}
+
+.footer__list {
+    @include media-laptop {
+        margin-right: 2rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include media-tabletbig {
+        margin-right: 1.5rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer__list.title {
+    @extend %font-prim;
+    @include font ($size: 1.8rem, $height: 1.2, $weight: 400, $style: normal);
+    color: $color-text;
+    @include media-tablet {
+        margin: 1.5rem 0 1.9rem;        
+        color: $color-main;
+    } 
+}
+
+.footer__link {
+    display: block;
+    margin-top: 2rem;    
+    @extend %font-prim;
+    @include font ($size: 1.6rem, $height: 1.2, $weight: 300, $style: normal);
+    color: $color-text;
+    cursor: pointer;
+    &:hover,:focus {
+        color: $color-add;
+    }
+    @include media-tabletbig {        
+        margin-top: 1rem;
+        @include font ($size: 1.3rem, $height: 1.2, $weight: 300, $style: normal);
+    }
+}
+
+.footer__list.contact {
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.footer__list.contact.mobile {
+    @include media-tablet {
+        display: block;
+    }
+}
+.footer__button {
+    margin-top: 7.8rem;
+    @include media-tablet {
+        margin-top: 0;
+    }
+    @include media-mobilesmall {        
+        margin-top: 5.2rem;             
+    }
+}
+
+.footer__bottom {
+    margin-top: 9.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);    
+    @include media-tablet {
+        margin-top: 2.8rem;
+    }
+    @include media-mobilesmall {
+        margin-top: 6.2rem;
+    }
+}
+
+.footer__row {
+    margin-top: 3.1rem;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    @include media-tablet {
+        margin-top: 3.4rem;
+    }  
+    @include media-mobilesmall {
+        margin-top: 2.2rem;
+        flex-direction: column-reverse;        
+    }          
+}
+
+.footer__copyright {    
+    @extend %font-prim;
+    @include font ($size: 1.8rem, $height: 1.6, $weight: 300, $style: normal);
+    color: $color-text;
+    @include media-tablet {
+        @include font ($size: 1.2rem, $height: 1.2, $weight: 300, $style: normal); 
+    }
+}
+
+.footer__socials {
+    display: flex;
+    .icon {
+        margin-bottom: 0;
+        margin-right: 2.9rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    } 
+    @include media-mobilesmall {
+        margin-bottom: 1.4rem;
+    }     
+}  
+
+.footer__contact.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-mobilesmall {
+        display: block;
+    }
+}
+
+
+
+
+
+

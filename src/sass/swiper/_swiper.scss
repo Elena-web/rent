@@ -1,0 +1,139 @@
+.swiper {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 16.7rem;
+    @include media-tablet {
+        margin-bottom: 7rem;
+    } 
+    @include media-mobilesmall { 
+        
+    }  margin-bottom: 5rem;
+}
+
+.swipper-wrapper {
+    box-sizing: content-box;
+}
+
+.swipper-slide {
+    display: flex;
+    width: 27%;
+    height: 31.1rem;
+    padding: 4.5rem 4.5rem 2.3rem 3rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: $color-background;
+    border: 1px solid $color-add;
+    
+}
+
+
+.slide-wrapper {
+    display: flex;
+    width: 100%;
+    height: 31.1rem;
+    padding: 4.5rem 4.5rem 2.3rem 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $color-background;
+    border: 1px solid $color-add;
+    @include media-tablet {
+        padding: 4rem 4rem 2rem 2.5rem;
+    }
+    @include media-mobilesmall {
+        padding: 2rem 1.5rem 1.5rem 2.5rem;        
+    }
+}
+
+.swiper__quotes {
+    width: 5rem;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    @include media-tabletbig {
+        width: 4rem;
+    }
+    @include media-tablet {
+        width: 3rem;
+    }
+    @include media-mobilesmall {
+        top: 5%;
+    }
+}
+
+.swiper__img {    
+    margin-bottom: 2rem;    
+    width: 14%;
+    border-radius: 50%;
+    @include media-laptop {
+        width: 16%;           
+    }
+    @include media-tabletbig {
+        width: 18%;        
+    }
+    @include media-tablet {
+        width: 20%;
+    }
+    @include media-mobile {
+        width: 30%;
+    }
+    @include media-mobilesmall {
+        width: 30%;
+    }
+}
+
+.swiper__name {
+    margin-bottom: 1rem;
+    @extend %font-add;
+    @include font($size: 2.5rem, $height: 1.2, $weight: 700, $style: normal);
+    color: $color-heading;
+    @include media-tabletbig {
+        @include font($size: 2rem, $height: 1.2, $weight: 700, $style: normal);
+    }
+    @include media-tablet {
+        @include font($size: 1.8rem, $height: 1.2, $weight: 700, $style: normal);
+    }
+    @include media-mobile {
+        @include font($size: 1.6rem, $height: 1.2, $weight: 700, $style: normal);
+        margin-bottom: 0.7rem;
+    }
+    
+}
+
+.swiper__subtitle {
+    margin-bottom: 2.4rem;
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 1.3, $weight: 400, $style: normal);
+    color: $color-heading;
+    @include media-tabletbig {
+        margin-bottom: 1.5rem;
+    }
+    @include media-tablet {
+        @include font($size: 1.4rem, $height: 1.2, $weight: 700, $style: normal);
+        margin-bottom: 1rem;
+    }
+    @include media-mobile {
+        margin-bottom: 0.8rem;
+    }
+    @include media-mobilesmall {        
+        margin-bottom: 0;
+    }
+}
+
+.swiper__link {
+   color: $color-add; 
+}
+
+.swiper__text {
+    width: 100%;
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 1.6, $weight: 400, $style: normal);
+    color: $color-link;
+    @include media-tabletbig {
+        @include font($size: 1.6rem, $height: 1.4, $weight: 400, $style: normal);
+    }
+    @include media-mobile {
+        @include font($size: 1.4rem, $height: 1.2, $weight: 400, $style: normal);
+    }    
+}

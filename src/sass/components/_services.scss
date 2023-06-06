@@ -1,0 +1,483 @@
+.services__header { 
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    height: 76.8rem;    
+    padding-bottom: 10rem;
+    background: url('../../img/bg/bg-services.jpg') no-repeat; 
+    background-size: cover; 
+    @include media-tabletbig {
+        height: 49.5rem;
+        padding-bottom: 5rem;
+    }
+    @include media-tablet {
+        height: 29.5rem;
+        padding-bottom: 1.5rem;
+    }
+    @include media-mobilesmall {
+        height: 19.1rem;
+        padding-bottom: 1.3rem;
+    }
+}
+
+.services__txt {
+    width: 60%;
+    margin: 0 auto;
+    @extend %font-prim;
+    @include font ($size: 2rem, $height: 1.3, $weight: 400, $style: normal);       
+    color: $color-heading;
+    @include media-tablet {
+        @include font ($size: 1.6rem, $height: 1.3, $weight: 400, $style: normal);  
+    }
+    @include media-mobile {
+        width: 80%;
+    }
+    @include media-mobilesmall {
+        width: 95%;
+        @include font ($size: 1.4rem, $height: 1.3, $weight: 400, $style: normal); 
+    }
+}
+
+.services__title {
+    width: 60%;
+    margin: 0 auto;
+    @extend %font-add;
+    @include font ($size: 6rem, $height: 1.3, $weight: 700, $style: normal);       
+    color: $color-heading;
+    span {
+        color: $color-add;
+    }
+    @include media-tabletbig {        
+        @include font ($size: 4rem, $height: 1.3, $weight: 700, $style: normal);  
+    }
+    @include media-tabletbig {        
+        @include font ($size: 3.8rem, $height: 1.3, $weight: 700, $style: normal);  
+    }
+    @include media-mobile {
+        width: 80%;
+    }
+    @include media-mobilesmall {
+        width: 95%;
+        @include font ($size: 2.4rem, $height: 1.3, $weight: 700, $style: normal); 
+    }
+}
+
+.services__article {
+    padding: 8.2rem 0 10rem;
+    @include media-tabletbig {
+        padding: 6.2rem 0 8rem;
+    }
+    @include media-tablet {
+        padding: 5rem 0 5rem;
+    }
+}
+
+.services__block-txt {
+    width: 45%;
+    margin: 0 auto 5rem;
+    @extend %font-prim;
+    @include font ($size: 1.6rem, $height: 1.6, $weight: 400, $style: normal);      
+    color: $color-link;
+    p {
+        margin-bottom: 3rem;
+        @include media-tablet {
+            margin-bottom: 2rem;
+        }
+        @include media-mobile {
+            margin: 0;
+        }
+    }
+    @include media-tablet {
+        width: 100%;
+    }
+    @include media-mobile {
+        margin-bottom: 2rem;
+    }
+}
+
+.services__block-txt.border {
+    border-bottom: 1px solid $color-link;
+    @include media-mobile {
+        padding-bottom: 3rem;
+    }
+}
+
+.services__image {    
+    width: 60%;
+    margin: 5rem auto 8.2rem;
+    img {
+        width: 100%;
+    }
+    @include media-tablet {
+        width: 100%;
+        margin: 4rem auto 5rem;
+    }
+    @include media-mobile {
+        margin: 3.8rem auto 4rem;
+    }
+    @include media-mobilesmall {
+        margin: 3.5rem auto 3rem;
+    }
+}
+
+.services__subtitle {
+    width: 45%;
+    margin: 0 auto 5rem;
+    @extend %font-add;
+    @include font ($size: 2.5rem, $height: 1.4, $weight: 700, $style: normal);       
+    color: $color-heading;    
+    @include media-tablet {
+        width: 80%;
+        margin: 0 0 2rem;
+    }
+    @include media-mobile {
+        width: 60%;
+        margin: 0 0 1.5rem;
+    }
+    @include media-mobilesmall {
+        width: 100%;
+        margin: 0 auto 1rem;
+        @include font ($size: 1.8rem, $height: 1.4, $weight: 700, $style: normal); 
+    }
+}
+
+.services__subtitle.small {
+    margin-bottom: 3rem;
+    @include font ($size: 1.8rem, $height: 1.4, $weight: 700, $style: normal); 
+}
+
+.services__quote {
+    width: 45%;
+    display: flex;
+    margin: 5.4rem auto 17rem;
+    padding: 4.1rem 7.2rem 3.4rem 4rem;    
+    border: 4px solid $color-add;
+    img {
+        height: 20%;
+        padding-top: 1.5rem;
+        @include media-mobilesmall {
+            height: 10%;
+            padding-top: 0;
+        }
+    } 
+    @include media-laptop {
+        margin: 4.4rem auto 16.1rem;
+    }
+    @include media-tabletbig {
+        margin: 5rem auto;
+    }
+    @include media-tablet {
+        width: 100%;
+        
+        padding: 3.8rem 6.1rem 3.6rem 3.2rem;        
+    } 
+    @include media-mobilesmall {
+        display: block;
+        padding: 1.2rem 2.5rem 1rem 1.5rem;        
+    }    
+}
+
+.quote__block {
+    width: 100%;
+    margin-left: 3rem;
+    @extend %font-add;
+    @include font ($size: 2rem, $height: 1.7, $weight: 600, $style: normal);      
+    color: $color-heading;
+    @include media-mobilesmall {
+        @include font ($size: 1.4rem, $height: 1.6, $weight: 400, $style: normal); 
+        margin-left: 0;
+        margin-top: 2rem;  
+    }
+}
+
+.quote__name {
+    margin-top: 2.8rem;
+    @extend %font-add;
+    @include font ($size: 1.6rem, $height: 1.6, $weight: 700, $style: normal);      
+    color: $color-heading;
+    @include media-mobilesmall {
+        text-align: right;
+    }
+}
+
+.quote__author {
+    margin-top: 0.5rem;
+    @extend %font-add;
+    @include font ($size: 1.6rem, $height: 1.6, $weight: 700, $style: normal);      
+    color: $color-link;
+    @include media-mobilesmall {
+        text-align: right;
+        margin-top: 0.2rem;
+    }
+}
+
+.services__pictures {
+    display: flex;
+    width: 60%;
+    margin: 0 auto 12.3rem;
+    @include media-tabletbig {
+        margin: 0 auto 7.3rem;   
+    }    
+    @include media-tablet {
+        width: 100%;
+        margin: 0 auto 6.3rem;    
+    }  
+    @include media-mobilesmall {
+        display: block;
+        margin: 0 auto 5rem;
+    }  
+}
+
+.block__pictures {     
+    img {        
+        &:nth-child(even) {
+            margin-top: 3rem;
+            @include media-mobilesmall {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+.block__pictures:nth-child(even) {  
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;	
+    }  
+    margin-left: 3rem; 
+       
+    @include media-mobilesmall {
+        margin: 1rem 0 0;
+    }
+}
+
+.services__columns {
+    width: 55%;
+    margin: 0 auto 8.3rem;
+    display: flex;
+    justify-content: space-between;
+    @include media-tabletbig {
+        width: 60%; 
+        justify-content: flex-start; 
+        margin: 0 auto 7rem;      
+    }
+    @include media-tablet {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto 6.5rem;
+    }
+    @include media-mobilesmall {
+        width: 70%;
+        display: block;
+        margin: 0 auto 5rem;        
+    }
+}
+
+.column {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    @include media-tabletbig {
+        margin-right: 2rem;
+    } 
+    @include media-tablet {
+        width: 100%;
+    }
+    @include media-mobilesmall {
+        width: 85%;
+        margin: 0 auto;        
+    }
+}
+
+.column__number {
+    position: relative;
+    @extend %font-prim;
+    @include font ($size: 6rem, $height: 1.2, $weight: 700, $style: normal);      
+    color: $color-add;
+    sup {
+        position: absolute;
+        top: -10%;
+        @include font ($size: 3rem, $height: 1.2, $weight: 700, $style: normal);    
+    }
+    @include media-tablet {
+        @include font ($size: 5rem, $height: 1.2, $weight: 700, $style: normal); 
+    }
+}
+.column__text {
+    padding-left: 1rem;    
+    margin-left: 2.4rem;
+    @extend %font-add;
+    @include font ($size: 1.6rem, $height: 1.3, $weight: 600, $style: normal);      
+    color: $color-heading;
+    text-transform: uppercase;
+    @include media-tabletbig {
+        margin-left: 1.5rem;   
+    }  
+    @include media-tablet {
+             
+    } 
+    @include media-mobile {
+        @include font ($size: 1.4rem, $height: 1.3, $weight: 600, $style: normal);
+    } 
+}
+
+.table {
+    width: 55%;
+    margin: 10.9rem auto 21.1rem;
+    border-spacing: 0;
+    td {
+        padding: 1.4rem 1.4rem 1.4rem 2rem;
+        @extend %font-prim;
+        @include font ($size: 1.6rem, $height: 1.6, $weight: 400, $style: normal);         
+    } 
+    @include media-tabletbig {
+        margin: 10.9rem auto 10rem;
+    }
+    @include media-tablet {
+        width: 100%;
+        margin: 5rem 0 7rem;
+    }
+    @include media-mobilesmall {
+        display: none;
+    }
+}
+.services__list {
+    width: 43%;
+    margin: 6.5rem auto 0;    
+    li {
+        @extend %font-prim;
+        @include font ($size: 1.6rem, $height: 1.6, $weight: 400, $style: normal);      
+        color: $color-link;
+        @include media-mobilesmall {
+            @include font ($size: 1.4rem, $height: 1.6, $weight: 400, $style: normal); 
+        }
+    }
+    @include media-tablet {
+        width: 88%;
+    }
+    @include media-mobilesmall {
+        margin: 3rem auto 0; 
+    }
+}
+
+.table__title.color {
+    padding: 2.4rem 0;
+    text-align: center;
+    @extend %font-add;
+    @include font ($size: 1.6rem, $height: 1.6, $weight: 400, $style: normal);
+    color: $color-background;        
+    background-color: $color-add; 
+}
+
+.table__title.light {
+    color: $color-heading;
+}
+
+.table__row.light {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.check-color {
+    text-align: center;
+    color: $color-add;
+}
+
+.services__row {
+    width: 70%;
+    margin: 0 auto 9.1rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; 
+    .services__subtitle {
+        margin: 0;
+    } 
+    @include media-tabletbig {
+        width: 100%;
+        margin: 0 auto 5rem; 
+    }  
+    @include media-mobile {
+        margin: 5rem auto 3rem;
+        text-align: center;        
+    }
+    @include media-mobilesmall {
+        .link-article {
+            display: none;
+        } 
+    }
+}
+
+.services__cards {
+    width: 70%;    
+    margin: 0 auto 24rem; 
+    display: flex;
+    justify-content: space-between;
+    @include media-laptop {
+        width: 80%;
+    }
+    @include media-tabletbig {
+        width: 100%;
+        margin: 0 0 8.2rem; 
+    }
+    @include media-mobile {
+        display: block;
+        width: 65%;
+        margin: 0 auto 7rem;
+    }
+    @include media-mobilesmall {
+        width: 75%;
+        margin: 0 auto 5rem;
+        
+    }      
+}
+
+.card.main-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8.3rem 3rem 2.8rem 3.4rem;
+    background-color: $color-add;     
+    .card__title {
+        margin-bottom: 2.8rem;
+        position: static;
+        @extend %font-add;
+        @include font ($size: 2.5rem, $height: 1.4, $weight: 700, $style: normal); 
+        color: $color-background;
+        @include media-tablet {
+            display: block;
+        }
+        @include media-mobile {            
+            @include font ($size: 2rem, $height: 1.4, $weight: 700, $style: normal); 
+        }
+        @include media-mobilesmall {
+            padding-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }    
+    }
+    .card__text, .card__link a  {
+        color: $color-background;                 
+    } 
+    .card__link {
+        margin-top: 4rem;
+        @include media-mobile {
+            margin-top: 3rem;
+        }
+        @include media-mobilesmall {
+            margin-top: 2rem; 
+        }
+    }
+    .card__link span {
+        background: url('/img/icons/arrow-dark.svg') no-repeat;
+        @include media-mobile {
+            width: 1.2rem;
+            height: 1.8rem;
+            background-size: contain;
+        }
+    } 
+
+    @include media-mobile  {
+        justify-content: center;        
+        padding: 0 5rem 1.8rem 3.4rem;
+    } 
+}
+

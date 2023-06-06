@@ -1,0 +1,118 @@
+.card {
+    position: relative;
+    margin-right: 3rem;
+    width: 35rem;    
+    &:last-child{
+        margin-right: 0;
+    }
+    @include media-tablet {       
+        margin-right: 2rem;        
+    }
+    @include media-mobile {
+        width: 100%;
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+    @include media-mobilesmall {
+        height: 21.8rem;
+        margin-bottom: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }       
+    }   
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;    
+    @include media-tablet {
+        display: none;
+    }    
+}
+
+.card__img.mob{
+    display: none;
+    @include media-tablet {
+        display: block;
+    }
+}
+
+.card__title {
+    @extend %font-add;
+    @include font ($size: 2.5rem, $height: 1.4, $weight: 700, $style: normal);
+    color: $color-heading;
+    position: absolute;
+    bottom: 5.2rem;
+    left: 3.8rem;
+    @include media-tablet {
+        display: none;
+    }    
+}
+
+.card.main { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;  
+    position: static;
+    padding: 4.1rem 3.6rem 3.1rem 3.5rem;
+    background: $color-background;
+    border: 1px solid $color-add;    
+    .card__title {
+        position: static;
+        margin-bottom: 2.8rem;
+    }
+    @include media-tablet {
+        width: 25.8rem; 
+        padding: 3.1rem 3.2rem 2.2rem 3rem;
+        .card__title {
+            display: block;
+            margin-bottom: 1.3rem;
+            @include font ($size: 1.8rem, $height: 1.2, $weight: 700, $style: normal);
+        }
+    }
+    @include media-mobile {
+        width: 100%;
+        height: 25rem;
+        padding: 3.1rem 2.4rem 3rem 2.3rem;
+    } 
+    @include media-mobilesmall {
+        width: 100%;
+        padding: 3.1rem 2.4rem 3rem 2.3rem;
+    } 
+}
+
+.card__date {
+    margin-bottom: 1.5rem;
+    @extend %font-prim;
+    @include font ($size: 1.6rem, $height: 1.6, $weight: 400, $style: normal);
+    color: $color-heading;
+    @include media-tablet {
+        margin-bottom: 1.3rem;
+        @include font ($size: 1.2rem, $height: 1.2, $weight: 400, $style: normal);
+    }    
+}
+
+
+.card__text {
+    @extend %font-prim;
+    @include font ($size: 1.6rem, $height: 1.6, $weight: 400, $style: normal);
+    color: $color-link;
+    @include media-tablet {
+        @include font ($size: 1.2rem, $height: 1.2, $weight: 400, $style: normal);
+    }    
+}
+.card__link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.card__link a{
+    display: inline-block;
+    @extend %font-prim;
+    @include font ($size: 1.6rem, $height: 1.6, $weight: 600, $style: normal);
+    color: $color-add;
+    @include media-tablet {
+        @include font ($size: 1.2rem, $height: 0, $weight: 600, $style: normal);
+    }
+}

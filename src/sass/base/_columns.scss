@@ -1,0 +1,34 @@
+.column__num {
+    margin-right: 2rem;
+    flex-shrink: 1;
+    @extend %font-add;
+    @include font ($size: 6rem, $height: 1.6, $weight: 700, $style: normal);
+    color: $color-heading; 
+    @include media-tabletbig {       
+        margin-right: 1rem;
+        @include font ($size: 4rem, $height: 1.25, $weight: 700, $style: normal);
+    }
+    @include media-mobilesmall {
+        @include font ($size: 4rem, $height: 1.25, $weight: 700, $style: normal);
+    }
+}
+.active {
+        color: $color-add;
+    }  
+
+.column__desc {
+    
+    @extend %font-prim;
+    @include font ($size: 1.4rem, $height: 1.6, $weight: 600, $style: normal);
+    color: $color-heading;
+    @include media-tabletbig {
+        @include font ($size: 1.4rem, $height: 1.2, $weight: 600, $style: normal);
+    }
+    @include media-tablet {
+        @include font ($size: 1rem, $height: 1.2, $weight: 600, $style: normal);
+    }
+    @include media-mobilesmall {
+        @include font ($size: 1rem, $height: 1.2, $weight: 500, $style: normal);
+    }
+}
+ 
