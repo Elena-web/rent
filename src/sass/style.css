@@ -57,6 +57,11 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 93.9%;
   padding: 0 6rem;
